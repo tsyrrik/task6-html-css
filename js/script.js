@@ -8,7 +8,7 @@ function fetchData() {
         });
 }
 
-// Функция для создания таблицы с данными
+// Таблицы с данными
 function createTable(data) {
     const tableHeaders = [
         'Предприятие', 'Коэф. повторяемости', 'Коэф. устраняемости',
@@ -80,7 +80,7 @@ function createChart(data) {
     });
 }
 
-// Инициализация получения данных и отрисовки таблицы и диаграммы
+// Получения данных и отрисовки таблицы и диаграммы
 fetchData().then(data => {
     createTable(data);
     createChart(data);
